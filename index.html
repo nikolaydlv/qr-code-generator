@@ -9,11 +9,13 @@
 </head>
 <body>
     <h1 class="title">QR-code генератор</h1>
-    <form class="card">
+    <form id="form" class="card">
         <h2 class="card-title">Введите текст или ссылку:</h2>
-        <input type="text" class="input" id="url" placeholder="Текст или ссылка" autocomplete="off">
+        <input id="input" type="text" class="input" id="url" placeholder="Текст или ссылка" autocomplete="off">
         <button type="submit" class="btn">Сгенерировать</button>
-        <div class="card-qr"></div>
+        <div class="card-qr" id="card-qr">
+        </div>
     </form>
+    <script src="./js/app.js"></script>
 </body>
 </html>
